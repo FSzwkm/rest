@@ -1,0 +1,199 @@
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-items: space-between;
+} */
+/* 
+.box{
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+
+
+} */
+
+/* .box1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-column: 1/2;
+}    */
+
+/* .box2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 4;
+}
+.box5{
+    grid-row:2/5 ;
+} */
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    background-image: url(2.jpg);
+    height: calc(100vh - 70px);
+    background-position: 10% 20%;
+    background-size:cover ;
+    width: 100%;
+}
+
+
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    height: 70px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight:bold ;
+    text-transform: capitalize;
+}
+h1 span {
+    color: red;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+
+}
+header ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+header ul li a:hover {
+    color: red;
+}
+header ul li:hover .dropdown {
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+
+}
+.dropdown{
+    display: none;
+} 
+.dropdown li {
+    width: 150px;
+    padding: 20px;
+    position: relative;
+
+}
+.fa-caret-right{
+    margin-left:90px ;
+}
+.dropdown2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 190px;
+    background-color: black;
+}
+.dropdown2 {
+    display: none;
+
+}
+.dropdown li:hover .dropdown2 {
+    display: block;
+}
+.header-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 20px;
+}
+.header-two .fa-bars{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header-two .bar {
+    display: block;
+    color: white;
+    position: relative;
+
+}
+.header-two .bar ul {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    background-color: black;
+    width: 200px;
+
+
+}
+.header-two .bar ul li{
+    padding: 10px 10px;
+    list-style: none;
+
+}
+.header-two .bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.header-two .bar ul li a:hover {
+    color: red;
+}
+.header-two .bar ul{
+    display: none;
+}
+.header-two li:hover ul {
+    display: block;
+}
+.header-two .bar ul li{
+    position: relative;
+}
+.header-two .bar ul li .bar-list {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    display: none;
+} 
+.header-two .bar ul li:hover .bar-list {
+    display: block;
+}
+.header-two {
+    display: none;
+}
+
+@media (max-width:790px){
+    header{
+        display: none;
+    }
+}
+@media (max-width:788px){
+    .header-two{
+        display: block;
+    }
+}
+
